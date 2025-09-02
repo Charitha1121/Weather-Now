@@ -1,28 +1,21 @@
-# Weather App
+# Weather Now (Take-Home Challenge)
 
-A responsive React weather app with:
-- City search
-- Use my location
-- Recent searches in a hamburger menu
-- Centered weather card
+A minimal, fast React app for checking **current weather** in any city using **Open-Meteo** and **Nominatim (OpenStreetMap)** — no API keys required.
 
-## Features
-- Uses [Open-Meteo API](https://open-meteo.com) for weather data
-- Uses [OpenStreetMap Nominatim API](https://nominatim.org) for geocoding
-- Mobile responsive layout
-- Recent searches (max 5)
-- Weather icons for easy understanding
+## ✨ Features
+- City search with geocoding (Nominatim)
+- Current weather (Open-Meteo)
+- Use my location (Geolocation + reverse geocode)
+- Recent searches drawer (hamburger, persists in localStorage)
+- Responsive, accessible UI
+- Error handling (city not found, network issues)
 
-## Setup
-1. Clone the repo:  
-   `git clone <repo-url>`
-2. Install dependencies:  
-   `npm install`
-3. Start the app:  
-   `npm start`
+## 🧩 Tech Stack
+- React (Vite or CRA)
+- CSS (plain)
+- Public APIs: Nominatim + Open-Meteo
 
-## Notes
-- API key not required for Open-Meteo free endpoints
-- Hamburger menu fixed to the left
-- Main card always centered
-- Works on desktop and mobile
+## 🚀 Run Locally
+```bash
+npm install
+npm run dev   # or npm start if CRA
